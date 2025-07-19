@@ -1,98 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book Library</title>
-  <style>
-    body {
-      background-color: #f8f8f8;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-
-    .book-library {
-      background-color: #ffffff;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-
-    .book {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
-    }
-
-    .book:hover {
-      transform: translateY(-5px);
-    }
-
-    .book img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .book h3 {
-      font-size: 16px;
-      margin: 10px 0 5px 0;
-    }
-
-    .book p.author {
-      color: #777777;
-      font-size: 14px;
-      margin: 5px 0;
-    }
-
-    .book p.price {
-      color: #2ecc71;
-      font-weight: bold;
-      font-size: 15px;
-      margin: 5px 0;
-    }
-	  button{
-		  padding:10px 20px;
-		  background-color:green;
-		  color:white;
-		  width:100px;
-	  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .book-library {
+            background-color: #ffffff;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .book-library h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .book {
+            background-color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.05);
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .book h3 {
+            margin: 10px 0 5px 0;
+            font-size: 16px;
+        }
+        .book p.author {
+            color: #777777;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+        .price-block {
+            background-color: #2ecc71;
+            color: #ffffff;
+            padding: 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <div class="book-library">
+        <h2>Book Library</h2>
 
-  <div class="book-library">
-    <div class="book">
-      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
-      <h3>Spy in the Amber</h3>
-      <p class="author">Author: Manohar Malgonkar</p>
-      <button class="price">₹299</button>
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
+            <h3>SPY IN THE AMBER</h3>
+            <p class="author">by Manohar Malgonkar</p>
+            <div class="price-block">Rs. 250</div>
+        </div>
+
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
+            <h3>Sacred Games</h3>
+            <p class="author">by Vikram Chandra</p>
+            <div class="price-block">Rs. 190</div>
+        </div>
+
+        <div class="book">
+            <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
+            <h3>BYOMKESH BAKSHI</h3>
+            <p class="author">by Sharadindu Bandyopadhyay</p>
+            <div class="price-block">Rs. 240</div>
+        </div>
+
     </div>
-
-    <div class="book">
-      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
-      <h3>Sacred Games</h3>
-      <p class="author">Author: Vikram Chandra</p>
-      <button class="price">₹499</button>
-    </div>
-
-    <div class="book">
-      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
-      <h3>Byomkesh Bakshi</h3>
-      <p class="author">Author: Sharadindu Bandyopadhyay</p>
-      <button class="price">₹399</button>
-    </div>
-  </div>
-
 </body>
 </html>
+
 
